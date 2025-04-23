@@ -55,6 +55,7 @@ services:
       MYSQL_DATABASE: laravel
       MYSQL_USER: laravel
       MYSQL_PASSWORD: secret
+    command: --sql-mode="NO_ENGINE_SUBSTITUTION"
     volumes:
       - db_data:/var/lib/mysql
     ports:
